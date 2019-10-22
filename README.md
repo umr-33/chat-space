@@ -46,8 +46,8 @@ Things you may want to cover:
 ## postsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|title|text|null: false|
 |text|text|null: false|
+|image|text|null: false|
 |user_id|integer|null: false, foreign_key: true|
 ### Association
 - belongs_to :user
@@ -56,8 +56,9 @@ Things you may want to cover:
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|group_name|string|null: false|
-|chat_menber|string|null: false|
+|text|string|null: false|
+|image|string|null: false|
+|user_id|integer|null: false, foreign_key: true|
 ### Association
 - has_many :posts
 - has_many :grops_users
