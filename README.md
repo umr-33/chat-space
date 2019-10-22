@@ -40,9 +40,9 @@ Things you may want to cover:
 |password|string|null: false|
 |name|string|null: false|
 ### Association
-- has_many :posts,  through: :groups_users
+- has_many :groups,  through: :groups_users
 
-- has_many :grops
+- has_many :users
 
 ## postsテーブル
 |Column|Type|Options|
