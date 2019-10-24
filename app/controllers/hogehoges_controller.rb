@@ -1,0 +1,2 @@
+class HogehogesController < ApplicationController
+end
