@@ -1,22 +1,6 @@
 
 .chat-side
-  .side-header 
-    .side-header__box
-      %p.side-header__box--user-name 
-        = current_user.name
-      %ul.side-header__box--menu
-        %li
-          =link_to new_group_path, class: "side-header__btn" do
-            %i.fa.fa-edit
-        %li  
-          = link_to edit_user_path(current_user), class: "side-header__btn" do
-            %i.fa.fa-cog    
-  .groups 
-    %p.groups__name
-      = link_to "sample-group", "＃"
-
-    %p.groups__test
-      = link_to "こんにちは", "#"
+  = render 'shared/side-header'
       
 .chat-main
   .main-header
@@ -25,6 +9,7 @@
       %p.main-header__left--member Menber:
     .mein-header__right
       %p.main-header__right--edit Edit
+        
   .message 
     .data-message
       .data-message__info
