@@ -1,0 +1,19 @@
+.side-header 
+  .side-header__box
+    %p.side-header__box--user-name 
+      = current_user.name
+    %ul.side-header__box--menu
+      %li
+        =link_to new_group_path, class: "side-header__btn" do
+          %i.fa.fa-edit
+      %li  
+        = link_to edit_user_path(current_user), class: "side-header__btn" do
+          %i.fa.fa-cog    
+.groups 
+  - current_user.groups.each do |group|
+    .group
+      = link_to '#' do
+        .groups__name
+          = group.name
+        .groups__test
+          メッセージはまだありません。
