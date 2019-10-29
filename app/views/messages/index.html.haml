@@ -4,11 +4,12 @@
       
 .chat-main
   .main-header
-    .mein-header__left
+    .main-header__left
       %p.main-header__left--group Sample
       %p.main-header__left--member Menber:
-    .mein-header__right
-      %p.main-header__right--edit Edit
+    .main-header__right
+      =link_to new_group_path, class: 'main-header__right--edit' do 
+        Edit
         
   .message 
     .data-message
