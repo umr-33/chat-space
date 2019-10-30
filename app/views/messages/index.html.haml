@@ -5,14 +5,15 @@
 .chat-main
   .main-header
     .main-header__left
-      %p.main-header__left--group Sample
+      %p.main-header__left--group 
+        = @group.name
       %p.main-header__left--member Menber:
     .main-header__right
       =link_to new_group_path, class: 'main-header__right--edit' do 
         Edit
         
-  .messages 
-    = render 'message'
+  .messages
+    = render @messages
 
   .form
     = form_for [@group, @message] do |f|
