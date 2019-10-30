@@ -89,15 +89,15 @@
       }
     }
   }
-  .message {
+  .messages {
     background-color: #fafafa;
-    padding: 46px 40px;
+    
     height: calc(100vh - 190px);
     width: calc(100vw - 300px);
     box-sizing: border-box;
   }
     .data-message {
-      padding-bottom: 40px;
+      padding: 46px 40px;
       &__info {
         display: flex;
         margin-bottom: 10px;
@@ -118,45 +118,40 @@
         font-size: 15px;
       }
     }    
-  .form {
-    height: 50px;
-    padding: 20px 40px;
-    background-color: #ddd;
-    display: flex;
-  }
-  .new-message { 
-    width: 100%;
-    display: flex;
-    position: relative; 
-    &__input {
-      padding-left: 10px;
-      display: flex;
-      background-color: #ffffff;  
-      height: 50px;
-      width: 100%;
-      border-style: none;
-      padding-right: 0px 40px 10px 0px; 
-      &--image {
-        font-size: 1.3rem;
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        cursor: pointer; 
-      }   
+    .form {
+      background-color: #DDDDDD;
+      box-sizing: border-box;
+      height: 90px;
+      padding: 20px 50px 20px 40px;
+      &__message {
+        border: none;
+        float: left;
+        height: 50px;
+        width: calc(100% - 160px);
+        padding-left: 10px;
+      }
+      &__mask {
+        background-color: white;
+        float: left;
+        height: 50px;
+        padding-right: 10px;
+        &__image {
+          font-size: 20px;
+          line-height: 50px;
+        }
+        .hidden {
+          display: none;
+        }
+      }
+      &__submit {
+        background-color: #38AEF0;
+        border: none;
+        color: white;
+        float: right;
+        font-size: 16px;
+        height: 50px;
+        margin-left: 15px;
+        padding: 0 30px;
+      }
     }
-  }
-  .submit {
-      background-color: #38aef0;
-      margin-left: 15px;
-      height: 50px;
-      color: white;
-      text-align: center;
-      padding: 0px 30px;
-      line-height: 50px;
-      cursor: pointer;         
- }
-      
-    
-    
-
-
+  
