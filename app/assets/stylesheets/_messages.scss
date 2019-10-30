@@ -90,34 +90,38 @@
     }
   }
   .messages {
-    background-color: #fafafa;
-    
+    background-color: #FAFAFA;
+    box-sizing: border-box;
+    padding: 46px 40px 0;
     height: calc(100vh - 190px);
     width: calc(100vw - 300px);
-    box-sizing: border-box;
-  }
-    .data-message {
-      padding: 46px 40px;
-      &__info {
-        display: flex;
-        margin-bottom: 10px;
-        &--talker {
-          font-size: 16px;
-          font-weight: bold;
-          color: #333333;
-        }
-        &--data {
-          padding-bottom: 10px;
-          margin-left: 10px;
-          font-size: 12px;
-          color: #999999;
-        }
-      }  
-      &__txet {
-        margin-bottom: 10px;
-        font-size: 15px;
+    overflow: scroll;
+    .upper-message {
+      display: flex;
+      
+      &__user-name {
+        color: #434a54;
+        font-size: 16px;
+        font-weight: bold；
+
+      }
+      &__date {
+        color: #999999;
+        font-size: 12px;
+        padding-left: 10px;
+      
       }
     }    
+    .lower-message {
+      margin-top: 10px;
+      &__content {
+        color: #434A54;
+        font-size: 14px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+
     .form {
       background-color: #DDDDDD;
       box-sizing: border-box;
