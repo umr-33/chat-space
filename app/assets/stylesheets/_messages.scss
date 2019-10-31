@@ -75,6 +75,11 @@
         font-size: 12px;
         color: #999999;
         padding-top: 15px; 
+        display: flex;
+        
+        li {
+          margin-left: 10px;
+        }
       }
     }
     &__right {

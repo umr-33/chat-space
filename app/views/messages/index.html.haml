@@ -5,9 +5,14 @@
 .chat-main
   .main-header
     .main-header__left
-      %p.main-header__left--group 
+      .main-header__left--group 
         = @group.name
-      %p.main-header__left--member Menber:
+      .main-header__left--member 
+        Menber : 
+        %ul
+          - @group.users.each do |user|
+            %li= user.name
+      
     .main-header__right
       =link_to new_group_path, class: 'main-header__right--edit' do 
         Edit
