@@ -16,7 +16,7 @@ $(function() {
               ${message.content}
             </p>
           </div>
-          <img src=${message.image} >
+          <img src=${""} >
         </div>`
       return html;
     } else {
@@ -42,7 +42,7 @@ $(function() {
 $('#new_message').on('submit', function(e){
   $("#new_message").prop('disabled', false);
     e.preventDefault(); 
-    //console.log(this)
+    console.log(this)
     var formData = new FormData(this);
     var url = $(this).attr('action')
     $.ajax({
