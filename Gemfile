@@ -64,3 +64,4 @@ gem 'factory_bot_rails'
 gem 'faker'
 gem "jquery-rails"
 gem 'pry-rails'
+gem 'turbolinks', '~> 5'
