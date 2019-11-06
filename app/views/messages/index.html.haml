@@ -11,7 +11,7 @@
         Menber : 
         %ul
           - @group.users.each do |user|
-            %li= user.name
+            = user.name
       
     .main-header__right
       =link_to edit_group_path(current_user), class: 'main-header__right--edit' do 

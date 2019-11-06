@@ -42,8 +42,9 @@ $(function() {
         alert('自動更新に失敗しました');
       });
     }
-  
   };
+  setInterval(reloadMessages,5000);
+
   $('#new_message').on('submit', function(e){
     $("#new_message").prop('disabled', false);
     e.preventDefault(); 
@@ -63,10 +64,10 @@ $(function() {
       $('.messages').append(html);
       $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight}, 'fast');   
       $('form')[0].reset();
+      $('.form__submit').attr('disabled', false);
     })
     .fail(function(){
       alert("メッセージ送信に失敗しました");
     });
   });
-  setInterval(reloadMessages,5000);
 });
