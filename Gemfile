@@ -74,3 +74,4 @@ gem 'faker'
 gem "jquery-rails"
 gem 'pry-rails'
 gem 'turbolinks', '~> 5'
+gem 'fog-aws'
