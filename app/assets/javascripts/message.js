@@ -65,6 +65,7 @@ $(function() {
       $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight}, 'fast');   
       $('form')[0].reset();
       $('.form__submit').attr('disabled', false);
+      $('.messsages').animate({scrollTop: $('.messages')[0].scrollHeight}, 'fast');
     })
     .fail(function(){
       alert("メッセージ送信に失敗しました");
